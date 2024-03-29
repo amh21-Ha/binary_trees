@@ -11,15 +11,18 @@
  */
 void binary_tree_inorder(const binary_tree_t *tree, void (*func)(int))
 {
-    if (!tree || !func)
-        return;
+	if (!tree || !func)
+		return;
 
     /* Recur on left subtree */
-    binary_tree_inorder(tree->left, func);
+	binary_tree_inorder(tree->left, func);
 }
-/* Example usage */
+/**
+ * print_node_value - print the value of node as Example usage
+ *@value: The value of node pass to print
+ */
 void print_node_value(int value)
 {
-    printf("%d ", value);
+	printf("%d ", value);
 }
 
