@@ -11,18 +11,21 @@
  */
 void binary_tree_preorder(const binary_tree_t *tree, void (*func)(int))
 {
-    if (!tree || !func)
-        return;
+	if (!tree || !func)
+		return;
 
-    /* Visit the current node */
-    func(tree->n);
+	/* Visit the current node */
+	func(tree->n);
 
-    /* Recur on left subtree */
-    binary_tree_preorder(tree->left, func);
-    }
+	/* Recur on left subtree */
+	binary_tree_preorder(tree->left, func);
+}
 
-/* Example usage */
+/**
+ * print_node_value - Example usage binary tree
+ * @value: a value to the function
+ */
 void print_node_value(int value)
 {
-    printf("%d ", value);
+	printf("%d ", value);
 }
